@@ -1,0 +1,65 @@
+#logo {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 25vw;
+  height: auto;
+}
+#heading {
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: chocolate;
+  text-align: center;
+  margin: 0;
+  padding: 10px 30px;
+  position: absolute;
+  top: 5px;
+  right: 50px;
+}
+nav {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+}
+li {
+  box-sizing: border-box;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  background: blueviolet;
+  display: inline-block;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+footer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer > h3 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+h2 {
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: chocolate;
+}
+.main-heading {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(189, 122, 39);
+}
+.one,
+.two,
+.three,
+.four {
+  text-align: center;
+}
+h3 > a {
+  color: black;
+}
