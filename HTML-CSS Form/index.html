@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="registration">Registration Form</h1>
+    <div class="form">
+      <form>
+        <!-- personal details -->
+        <fieldset class="first-section">
+          <legend>Personal Details</legend>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autofocus
+            placeholder="Your name"
+            required
+            pattern="[A-Za-z]+"
+          />
+          <br /><br />
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="Email id" />
+          <br /><br />
+          <label for="tel">Phone</label>
+          <input
+            type="tel"
+            id="tel"
+            placeholder="+91"
+            required
+            pattern="[0-9]+"
+          />
+          <br /><br />
+          <label for="dob">DOB</label>
+          <input type="date" id="dob" required /> <br /><br />
+
+          <!-- name should be same for all, for and id same for label and input of each -->
+          <label for="gender">Gender</label>
+          <label for="male">
+            <input type="radio" name="gender" id="male" required />Male</label
+          >
+          <label for="female">
+            <input type="radio" name="gender" id="female" />Female</label
+          >
+          <label for="other">
+            <input type="radio" name="gender" id="other" />Other</label
+          ><br />
+          <br />
+          <label for="geographic-regions">Geographic Regions</label>
+          <select name="geographic-regions" id="geographic-regions">
+            <option value="region">Choose Region</option>
+            <option value="Africa">Africa</option>
+            <option value="Asia">Asia</option>
+            <option value="Caribbean">Caribbean</option>
+            <option value="Central America">Central America</option>
+            <option value="Europe">Europe</option>
+            <option value="North America">North America</option>
+            <option value="Oceania">Oceania</option>
+            <option value="South America">South America</option>
+          </select>
+          <br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Account details</legend>
+          <label for="username">Username (alphabets only) </label>
+          <input
+            type="text"
+            name="name"
+            id="username"
+            required
+            pattern="[A-Za-z]+"
+            placeholder="username"
+          />
+          <br /><br />
+          <label for="password" required>Password</label>
+          <input
+            type="password"
+            id="password"
+            minlength="8"
+            required
+            placeholder="*********"
+          />
+          <br /><br />
+        </fieldset>
+
+        <div class="terms">
+          <input type="checkbox" id="agree" name="agree" class="checkbox" />
+          <label for="agree"
+            >I have read and agree to the terms and conditions</label
+          >
+        </div>
+        <div class="submit">
+          <button type="submit" id="submit" disabled>submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- <label for="days">Proficiency:</label>
+      <progress id="days" value="55" max="100">27%</progress>
+      <br /><br /> -->
+
+<!-- list attibute and id of datalist must be same -->
+<!-- <input list="genders" name="gender" id="gender" />
+      <datalist id="genders">
+        <option value="female"></option>
+        <option value="male"></option>
+        <option value="other"></option>
+      </datalist> -->
